@@ -1,0 +1,47 @@
+
+#create{
+   margin: auto;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   margin-top: 50px;
+   width: 30%;
+   padding: 30px;
+   border-radius: 15px;
+
+}
+
+label{
+    font-size: 20px;
+}
+
+select,textarea,input[type="date"],
+select,textarea,input[type="text"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+#create>h1{
+    text-align: center;
+}
+
+input[type="submit"]{
+   background-color: rgb(40, 29, 128);
+   color: white;
+   width: 100%;
+   font-size: 20px;
+   padding: 10px 15px; 
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+    color: teal;
+    font-weight: bold;
+    border: 1px solid teal;
+}
+
