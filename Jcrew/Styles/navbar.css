@@ -39,17 +39,20 @@ a{
 .header{
     display: block;
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 1000;
-    padding: 10px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
 
 }
 
 .container{
     margin: auto;
     width: 100%;
+    position: fixed;
+    padding: 10px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
 }
 
 .row{
@@ -73,11 +76,11 @@ flex: 0 0 10%;
 }
 
 .header .item-center{   
-    flex: 0 0 58%;
+    flex: 0 0 55%;
 }
 
 .header .item-right{ 
-    flex: 0 0 32%;
+    flex: 0 0 35%;
     display: block;
     display: inline-block;
 }
@@ -121,6 +124,7 @@ flex: 0 0 10%;
     width: 20%;
     opacity: 0;
     visibility: hidden;
+   
 }
 
 .header .menu >ul>li.menu-item-has-children:hover .sub-menu{
@@ -131,6 +135,53 @@ flex: 0 0 10%;
 .header .menu >ul>li .sub-menu>ul>li{
     line-height: 0.2;
 }
+
+#account>div>ul{
+    position: absolute;
+    /* z-index: 99; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    padding: 20px 20px;
+    background-color: white;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+    width: 20%;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+#account>div>ul{
+    right: 15%;
+    padding: 10px 30px;
+    list-style: circle;
+    color: #000;
+    margin-top: 11px;
+
+}
+
+#account>div>ul>li>a{
+    color: black;
+    font-size: 15px;
+
+}
+
+#account>div>ul>li>a:hover{
+    text-decoration: underline;
+
+}
+
+#account:hover div>ul{
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    line-height: 2;
+}
+
+#login{
+    cursor: pointer;
+}
+
+
+
 
 .header .menu >ul>li .sub-menu>ul>li>a{
     display: inline-block;
@@ -177,16 +228,16 @@ transform: translate(-50%);
 .header .menu >ul>li .sub-menu.mega-menu-column-4>.list-item{
    flex: 0 0 25%;
     padding: 0 10px; 
-    
-    
 }
 
 
-/* .header .menu >ul>li .sub-menu.mega-menu-column-4>.list-item img{
+
+
+.header .menu >ul>li .sub-menu.mega-menu-column-4>.list-item img{
     max-width: 100%;
     width: 100%;
     vertical-align: middle;
-} */
+}
 
 .header .menu >ul>li .sub-menu.mega-menu-column-4>.list-item .title{
    font-size: 16px;
@@ -213,6 +264,22 @@ transform: translate(-50%);
  color: red;
 }
 
+#second-nav{
+    display: block;
+    position: relative;
+    top:12%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#second-nav>p{
+    padding: 20px;
+    font-size: 14px;
+}
+
 
 .banner-section{
     background-color: #93c5fd;
@@ -224,6 +291,8 @@ transform: translate(-50%);
     margin-top: 100px;
     min-height: 100%;
 }
+
+
 
 
 
@@ -250,6 +319,10 @@ transform: translate(-50%);
 .footer .footer-content .footer-section-left>div{
     width:33%;
     display: flex;
+}
+
+#footer-list-item>h4+p{
+    margin-bottom: 20px;
 }
 
 .footer .footer-content .footer-section-right{
