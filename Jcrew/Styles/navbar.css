@@ -112,7 +112,7 @@ flex: 0 0 10%;
 
 .header .menu >ul>li .sub-menu{
     position: absolute;
-    /* z-index: 99; */
+    z-index: 99;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     padding: 20px 30px;
     background-color: white;
@@ -327,15 +327,14 @@ textarea,input[type="submit"]{
     color: #000;
     margin-left: 30px;
     padding: 5px;
-font-size: 20px;
+font-size: 18px;
 }
 
 #footer-head>div{
 padding: 20px 10px;
 }
 #footer-head>div>a:hover{
-    text-decoration: underline;
-    
+    text-decoration: underline;  
 }
 
 #footer-head>div>a>img{
