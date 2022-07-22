@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
 
 /* #banner-section{
-    height: 100%;
+    position: absolute;
 } */
 
 #top-banner{
+    padding-top: 120px;
    height: auto;
     display: flex;
     background-color: #cbd5e1;
@@ -79,33 +80,28 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,739px);
     margin-top: 50px;
-    position: relative;
+    
 
 }
 
-/* #top-banner-second>div{
-    position: relative;
-    
-} */
 
 #top-banner-second>div>img{
     width: 100%;
+    position: static;
 }
+
 #top-banner-second>div{
     position: relative;
 }
 
 #top-banner-second>div>span{
-    position: relative;
-    bottom: 65%;
+    position: absolute;
+    bottom: 370px;
     left: 20%;
     font-family: 'Tiro Devanagari Sanskrit', serif;
     font-size: 35px;
     color: white;
 }
-
-
-
 
 
 #top-banner-second>div:nth-child(1)>span{
@@ -134,13 +130,21 @@
     margin-left: 40px;
     padding: 8px 20px;
     background-color: white;
-    font-size: 16px;
+    
 }
 
+#shop-arrivals>button>a{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+#shop-arrivals>button:hover>a{
+    color: white;
+}
 #shop-arrivals>button:hover{
    
     background-color: grey;
-    font-size: 16px;
     color: white;
     cursor: pointer;
     transition: 0.3s ease;
@@ -208,5 +212,25 @@
 }
 
 
+@media all and (min-width:481px) and (max-width:768px) {
+    #top-banner-right{
+       visibility: hidden;
+         
+    }
 
+    #top-banner>div{
+        width: 100%;
+    }
+   }
+  
+   @media all and (min-width:320px) and (max-width:480px) {
+    #top-banner-right{
+        visibility: hidden;    
+     }
+
+     #top-banner>div{
+        width: 100%;
+    }
+
+   }
 
