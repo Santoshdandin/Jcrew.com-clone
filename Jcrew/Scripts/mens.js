@@ -467,6 +467,7 @@ function display(mensData) {
 
     let price = document.createElement("span");
     price.innerText = "INR " + elem.price;
+    
     let strikedPrice = document.createElement("span");
     strikedPrice.innerText =  elem.strikedoffprice;
 
